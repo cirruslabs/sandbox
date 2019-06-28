@@ -1,0 +1,11 @@
+container:
+  image: alpine:latest
+  cpu: 0.1
+  memory: 128Mb
+  
+task:
+  script: |
+    for i in `seq 300`;
+      echo "Step $i"
+      sleep 1
+    done
