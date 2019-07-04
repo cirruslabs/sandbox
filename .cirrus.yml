@@ -1,6 +1,6 @@
 container:
   image: alpine:latest
-  cpu: 0.1
+  cpu: 0.2
   memory: 128Mb
   
 lint_task:
