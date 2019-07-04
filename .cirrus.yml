@@ -3,10 +3,9 @@ container:
   cpu: 0.1
   memory: 128Mb
   
-task:
-  foo_bar_script: |
-    for i in `seq 300`;
-    do
-      echo "Step $i"
-      sleep 1
-    done
+lint_task:
+  script: echo "Linted!"
+  
+test_task:
+  required_pr_labels: initial-review
+  script: echo "Tested!"
