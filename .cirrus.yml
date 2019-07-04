@@ -1,9 +1,5 @@
-container:
-  image: alpine:latest
-  cpu: 0.1
-  memory: 128Mb
-  
-task:
+docker_builder:
+  version_script: docker --version
   foo_bar_script: |
     for i in `seq 300`;
     do
