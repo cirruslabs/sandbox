@@ -1,4 +1,5 @@
 docker_builder:
+  use_compute_credits: false
   version_script: docker --version
   foo_bar_script: |
     for i in `seq 300`;
