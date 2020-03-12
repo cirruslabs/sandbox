@@ -1,11 +1,8 @@
 container:
   image: alpine:latest
-  cpu: 0.2
-  memory: 128Mb
   
 lint_task:
   script: echo "Linted!"
   
 test_task:
-  required_pr_labels: initial-review
   script: echo "Tested!"
