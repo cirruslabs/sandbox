@@ -1,8 +1,8 @@
 container:
   image: alpine:latest
   
-lint_task:
+Linter_task:
   script: echo "Linted!"
   
-test_task:
+Tests_task:
   script: echo "Tested!"
