@@ -6,3 +6,6 @@ lint_task:
   
 test_task:
   script: echo "Tested!"
+  
+failure_task:
+  script: exit 1
