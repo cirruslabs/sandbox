@@ -1,0 +1,13 @@
+on:
+  repository_dispatch:
+    type: ['cirrus-ci-build']
+    
+name: Continue after Cirrus CI Complets Successfully
+jobs:
+  continue:
+    name: After Cirrus CI
+    if: github.event.client_payload.build.status == 'COMPLETED'
+    runs-on: ubuntu-latest
+    steps:
+    - name: Continue	
+      run: echo "Hello after Cirrus CI Completed"
