@@ -1,5 +1,7 @@
 container:
   image: alpine:latest
+  cpu: 0.5
+  memory: 256Mb
   
 lint_task:
   script: echo "Linted!"
