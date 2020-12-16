@@ -2,4 +2,5 @@ task:
   persistent_worker:
     labels:
       os: darwin
-  script: system_profiler SPSoftwareDataType
+  system_script: system_profiler SPSoftwareDataType
+  sleep_script: sleep 60
